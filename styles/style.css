@@ -1,0 +1,203 @@
+:root{
+    --main-bg-color:#FFFFFF;
+    --accent-bg-color:#2F303A;
+    --section-bg-color:#F5F5F5;
+    --team-section-bg-color:#F5F4FA;
+    
+    --main-color: #212121;
+    --accent-color:#2196F3;
+    --paragraf-color:#757575;
+    --hero-color:#FFFFFF;
+
+    --main-text:Roboto;
+    --additional-text:Raleway;
+}
+/*Основные стили на страницу*/
+body{
+    font-family: var(--main-text), sans-serif;
+    color: var(--main-color);
+    background-color: var(--main-bg-color);
+}
+
+/*Стилизация Логотипа*/
+.logo{
+    font-family: var(--additional-text), sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+.logo-primary{
+    color: var(--accent-color);
+}
+.logo-secondary{
+    color: #000000;
+}
+
+.logo-footer{
+    color: #FFFFFF;
+}
+/*Навигация Сайта*/
+.site-nav .link{
+    color: var(--main-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.connection .link{
+    color: var(--paragraf-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.connection .link:hover,
+.connection .link:focus{
+    color: var(--accent-color);
+}
+
+.site-nav .this-page{
+    color: var(--accent-color);
+}
+/*Общии стили для снятия лишнего с ссылок и элементов списка*/
+.list{
+    list-style-type: none;
+}
+.link{
+    text-decoration: none;
+}
+/*Стилизирую Героя*/
+.hero{
+    background-color: var(--accent-bg-color);
+}
+
+.hero .title{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--hero-color);
+}
+
+.hero-btn{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: var(--main-text), sans-serif;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    background-color: var(--accent-color);
+    color: var(--hero-color);
+    cursor: pointer;
+}
+
+.hero-btn:hover,
+.hero-btn:focus{
+    background-color: #188CE8;
+}
+/*Секция со скрытым заголовком*/
+.benefits .title{
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+}
+
+.benefits .text{
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--paragraf-color);
+}
+
+/*Секция с доп элементами*/
+.aside .title{
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+/*Секция с командой*/
+.team-section{
+    background-color: var(--team-section-bg-color);
+}
+
+.team-section .title{
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team-section .secondary-title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;    
+    letter-spacing: 0.03em;
+}
+
+.team-section .text{
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--paragraf-color);
+}
+/*Фон футера*/
+.footer{
+    background-color: var(--accent-bg-color);
+}
+
+.footer-adres .link{
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--paragraf-color);
+}
+
+.footer-adres .footer-link{
+    color: var(--hero-color);
+}
+.footer-adres .link:hover,
+.footer-adres .link:focus{
+    color: var(--accent-color);
+}
+
+/*Стили Портфолио*/
+.portfolio-btn{
+    font-family: var(--main-text), sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background-color: var(--team-section-bg-color);
+    cursor: pointer;
+}
+.portfolio-btn:focus,
+.portfolio-btn:hover{
+    color: var(--hero-color);
+    background-color: var(--accent-color);
+}
+.portfolio .title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+}
+
+.portfolio-text{
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: var(--paragraf-color);
+}
